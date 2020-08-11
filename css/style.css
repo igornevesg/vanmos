@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 * {
     margin: 0;
@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .no-decoration {
@@ -97,7 +97,7 @@ body {
 }
 
 .imagem1 {
-    width: 15vw;
+    width: 17vw;
 }
 
 h1 {
@@ -110,7 +110,7 @@ h1 {
 }
 
 .p1 {
-    font-size: 1.20rem;
+    font-size: 1rem;
     color: white;
     text-align: left;
     font-weight: 400;
@@ -118,24 +118,21 @@ h1 {
 }
 
 .saiba-mais {
-    padding-top: 1.25rem;
+    padding-top: 2rem;
     text-decoration: none;
     float: left;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
-}
-
-.saiba-mais:hover {
-    background: rgb(9, 9, 121);
-    background: linear-gradient(239deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-size: 16px;
 }
 
 .badges {
     display: flex;
     flex-direction: row;
-    padding: 40px;
+    padding: 10px 40px 40px 0px;
+    position: relative;
+    right: 15px;
 }
 
 .badges img {
@@ -168,7 +165,7 @@ h1 {
 }
 
 h2 {
-    padding: 1rem;
+    padding: 1.25rem;
     grid-area: 1/1;
     font-size: 3rem;
     font-family: 'Fredoka One', sans-serif;
