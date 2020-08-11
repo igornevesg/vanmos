@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +14,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .no-decoration {
@@ -26,14 +27,14 @@ body {
 .topo {
     flex: 1;
     padding: 1.25rem 21.875rem;
+    background-image: url(/Images/bg-top.svg);
 }
 
 .logo {
-    padding-left: 3.125rem;
     float: left;
-    width: 12rem;
+    width: 17rem;
     position: relative;
-    top: 0.625rem;
+    bottom: 40px;
 }
 
 .topnav {
@@ -46,9 +47,10 @@ body {
     display: inline-block;
     color: #111A47;
     text-align: center;
-    padding: 0.375rem 0.5rem;
+    padding: 0.375rem 1rem;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .topnav a:hover {
@@ -69,40 +71,47 @@ body {
 
 .flex-2 {
     flex: 2;
-    padding: 6.25rem 25rem;
+    padding: 0rem 25rem 6.25rem 25rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.75fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     text-align: center;
+    background-image: url('/Images/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .item1-content1 {
     grid-area: 1/1;
     padding-right: 2.5rem;
+    padding-top: 2rem;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
 }
 
 .item2-content1 {
     grid-area: 1/2;
+    justify-self: flex-end;
 }
 
 .imagem1 {
-    width: 30vw;
+    width: 15vw;
 }
 
 h1 {
     font-size: 2.8rem;
-    background: rgb(9, 9, 121);
-    background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #dfa12b;
     text-align: left;
     line-height: 4rem;
+    font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 0.1rem;
 }
 
 .p1 {
-    font-size: 1.125rem;
-    color: black;
+    font-size: 1.20rem;
+    color: white;
     text-align: left;
     font-weight: 400;
     padding-top: 0.625rem;
@@ -113,10 +122,7 @@ h1 {
     text-decoration: none;
     float: left;
     font-weight: 700;
-    background: rgb(9, 9, 121);
-    background: linear-gradient(135deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
 }
 
 .saiba-mais:hover {
@@ -126,11 +132,25 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+.badges {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.badges img {
+    width: 10rem;
+}
+
+#gplay {
+    width: 13rem;
+}
+
 
 /* Segunda Div */
 
 #servicos {
-    padding: 8.75rem 25rem;
+    padding: 0rem 25rem 8.75rem 25rem;
     background-color: white;
 }
 
@@ -148,15 +168,14 @@ h1 {
 }
 
 h2 {
-    padding: 2.5rem;
+    padding: 1rem;
     grid-area: 1/1;
     font-size: 3rem;
+    font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 0.1rem;
     white-space: initial;
     text-align: center;
-    background: rgb(9, 9, 121);
-    background: linear-gradient(239deg, rgba(9, 9, 121, 1) 0%, rgba(0, 194, 255, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #325ca7;
     position: relative;
 }
 
