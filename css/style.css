@@ -53,7 +53,7 @@ body {
 }
 
 .topnav a:hover {
-    color: #6D6D6D;
+    color: rgba(236, 236, 236, 0.904);
 }
 
 #botao-menu {
@@ -257,11 +257,13 @@ h2 {
 
 /* Terceira Div */
 
-#portfolio {
+#como-funciona {
     padding: 6.25rem 25rem;
 }
-
-#portfolios {
+#como-funciona img {
+    filter: drop-shadow(0px 0px 1px rgba(0,0,0,.1));
+}
+#apps {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -361,13 +363,13 @@ h4 {
     margin-bottom: 40px;
 }
 
-.clientes img {
+.produtos img {
     width: 20rem;
     filter: grayscale(100);
     padding: 40px;
 }
 
-.clientes img:hover {
+.produtos img:hover {
     filter: grayscale(0);
 }
 
@@ -534,7 +536,7 @@ form {
         position: relative;
         left: 70px;
     }
-    #portfolios {
+    #apps {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -580,7 +582,7 @@ form {
         font-size: 2.5rem;
         white-space: initial;
     }
-    #portfolio {
+    #como-funciona {
         padding: 6.25rem 5rem;
     }
     h3 {
@@ -697,7 +699,7 @@ form {
         width: 15rem;
     }
     .topnav a:hover {
-        background-color: rgb(214, 215, 228);
+        background-color: rgba(214, 215, 228);
     }
     .topo {
         padding: 20px;
@@ -733,7 +735,7 @@ form {
         justify-content: center;
         margin: 20px;
     }
-    #portfolio {
+    #como-funciona {
         padding: 20px;
     }
     h3 {
@@ -880,7 +882,7 @@ form {
     h4 {
         font-size: 1.5rem;
     }
-    .clientes img {
+    .produtos img {
         width: 15rem;
     }
     #logo-elevic {
