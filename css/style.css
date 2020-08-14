@@ -28,6 +28,8 @@ body {
     flex: 1;
     padding: 1.25rem 21.875rem;
     background-image: url('../Images/bg-top.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logo {
@@ -151,6 +153,25 @@ h1 {
     background-color: white;
 }
 
+h2 {
+    padding: 1.25rem;
+    grid-area: 1/1;
+    font-size: 3rem;
+    font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 0.1rem;
+    white-space: initial;
+    text-align: center;
+    color: #325ca7;
+    position: relative;
+}
+
+h3 {
+    font-size: 3rem;
+    color: #dfa12b;
+    padding-top: 80px;
+    font-family: 'Fredoka One', sans-serif;
+}
+
 hr {
     width: 20vw;
     margin: auto;
@@ -186,18 +207,6 @@ hr {
 
 .vanmos-motorista i {
     color: #dfa12b;
-}
-
-h2 {
-    padding: 1.25rem;
-    grid-area: 1/1;
-    font-size: 3rem;
-    font-family: 'Fredoka One', sans-serif;
-    letter-spacing: 0.1rem;
-    white-space: initial;
-    text-align: center;
-    color: #325ca7;
-    position: relative;
 }
 
 .local {
@@ -258,23 +267,32 @@ h2 {
 /* Terceira Div */
 
 #como-funciona {
+    background-color: #325ca7;
+}
+
+h4 {
+    grid-area: 1/1;
+    text-align: center;
+    font-size: 3rem;
+    color: #dfa12b;
+    font-family: 'Fredoka One', sans-serif;
+    white-space: initial;
+    margin-bottom: 40px;
+}
+
+#como-funciona {
     padding: 6.25rem 25rem;
 }
+
 #como-funciona img {
-    filter: drop-shadow(0px 0px 1px rgba(0,0,0,.1));
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, .1));
 }
+
 #apps {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0px 80px;
-}
-
-h3 {
-    font-size: 3rem;
-    color: #dfa12b;
-    padding-top: 80px;
-    font-family: 'Fredoka One', sans-serif;
 }
 
 .portfolio1 {
@@ -348,12 +366,55 @@ h3 {
 
 /*Quarta Div */
 
-#parceiros {
-    padding: 100px 400px;
-    background-color: white;
+h5 {
+    grid-area: 1/1;
+    text-align: center;
+    font-size: 3rem;
+    color: #325ca7;
+    font-family: 'Fredoka One', sans-serif;
+    white-space: initial;
+    padding-bottom: 1rem;
 }
 
-h4 {
+.produtos {
+    padding: 6.25rem 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos img {
+    width: 20rem;
+    padding: 40px;
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+#app-motorista {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Quinta Div */
+
+.em-breve {
+    background-color: #325ca7;
+}
+
+
+/* Sexta Div */
+
+h6 {
     grid-area: 1/1;
     text-align: center;
     font-size: 3rem;
@@ -361,24 +422,8 @@ h4 {
     font-family: 'Fredoka One', sans-serif;
     white-space: initial;
     margin-bottom: 40px;
+    padding-bottom: 6rem;
 }
-
-.produtos img {
-    width: 20rem;
-    filter: grayscale(100);
-    padding: 40px;
-}
-
-.produtos img:hover {
-    filter: grayscale(0);
-}
-
-#logo-elevic {
-    width: 12rem;
-}
-
-
-/* Quinta Div */
 
 #contato {
     background: white;
@@ -389,18 +434,6 @@ h4 {
 .forma-contato {
     font-weight: bold;
     font-size: 24px;
-}
-
-h5 {
-    grid-area: 1/1;
-    text-align: center;
-    font-size: 3rem;
-    color: #325ca7;
-    font-family: 'Fredoka One', sans-serif;
-    white-space: initial;
-    margin-bottom: 40px;
-    white-space: initial;
-    padding-bottom: 6rem;
 }
 
 #fale-conosco {
