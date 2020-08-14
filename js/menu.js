@@ -23,3 +23,7 @@ function abrirMenu() {
         submenu.style.display = 'none';
     } 
 }
+
+function emBreve() {
+    alert('Aplicativo disponível em breve')
+}

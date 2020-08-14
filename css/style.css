@@ -129,22 +129,29 @@ h1 {
     font-size: 16px;
 }
 
-.badges {
+.buttons {
     display: flex;
     flex-direction: row;
-    padding: 0px 40px 40px 0px;
     position: relative;
-    right: 15px;
+    margin-top: 15px;
+    gap: 25px;
 }
 
-.badges img {
-    width: 10rem;
+.buttons button {
+    padding: 18px 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: #325ca7;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
 }
-
-#gplay {
-    width: 13rem;
+.buttons button:hover {
+    background-color: #dfa12b;
+    color: white;
+    transition: all 0.3s;
 }
-
 
 /* Segunda Div */
 
@@ -409,6 +416,29 @@ h5 {
 
 .em-breve {
     background-color: #325ca7;
+    padding: 50px;
+}
+.em-breve p {
+    color: #dfa12b;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 2rem;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.badges img {
+    width: 11rem;
+}
+
+#gplay {
+    width: 14rem;
 }
 
 
