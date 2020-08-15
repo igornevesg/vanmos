@@ -199,7 +199,6 @@ hr {
     justify-content: center;
     gap: 0px 80px;
     font-size: 2.375rem;
-    transition: 0.5s;
 }
 
 .item2-content2 i {
@@ -211,7 +210,6 @@ hr {
     justify-content: center;
     gap: 0px 80px;
     font-size: 2.375rem;
-    transition: 0.5s;
 }
 
 .vanmos-motorista i {
@@ -298,7 +296,7 @@ h4 {
 
 .apps {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 0px 80px;
 }
@@ -331,19 +329,7 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 200px;
 }
-
-#app {
-    display: flex;
-    flex-direction: column;
-}
-
-#app-motorista {
-    display: flex;
-    flex-direction: column;
-}
-
 
 /* Quinta Div */
 
@@ -391,11 +377,7 @@ h6 {
     background: white;
     padding: 100px 200px;
     margin: auto;
-}
-
-.forma-contato {
-    font-weight: bold;
-    font-size: 24px;
+    margin: 0;
 }
 
 #fale-conosco {
@@ -410,7 +392,7 @@ h6 {
 }
 
 #formulario button {
-    padding: 15px 275px;
+    padding: 15px 14.2vw;
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -519,9 +501,6 @@ form {
     h3 {
         font-size: 3rem;
     }
-    #parceiros {
-        padding: 6.25rem 5rem;
-    }
     h4 {
         font-size: 3rem;
     }
@@ -531,18 +510,11 @@ form {
     #fale-conosco {
         margin: auto;
     }
-    .maps {
-        width: 28rem;
-    }
     h5 {
         font-size: 3rem;
     }
     h6 {
         font-size: 3rem;
-    }
-    .forma-contato {
-        white-space: initial;
-        font-size: 1.75rem;
     }
 }
 
@@ -554,20 +526,26 @@ form {
         white-space: initial;
         grid-gap: 50px;
     }
-    .maps {
-        width: 23rem;
-    }
-    .forma-contato {
-        white-space: initial;
-    }
     #myTopNav {
         display: block;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {    
+    .topo {
+        padding: 20px 60px;
+    }
     .flex-2 {
         padding: 0rem 6.25rem 30rem 6.25rem;
+    }
+    .topnav a {
+        font-size: 0.8rem;
+    }
+    .text-vanmos span {
+        font-size: 0.8rem;
+    }
+    .produtos {
+        padding: 30px;
     }
     h1 {
         font-size: 2rem;
@@ -584,6 +562,8 @@ form {
     }
     h5 {
         font-size: 2rem;
+        margin: auto;
+        padding: 0%;
     }
     h6 {
         font-size: 2rem;
@@ -609,6 +589,19 @@ form {
         grid-template-columns: 1fr 1fr;
         margin: auto;
     }
+    #formulario button {
+        padding: 15px 27.8vw;
+    }
+    
+    #formulario input {
+        width: 60vw;
+        height: 5vh;
+    }
+    
+    #formulario textarea {
+        width: 60vw;
+    }    
+    
 }
 
 @media screen and (max-width: 916px) {
@@ -648,6 +641,7 @@ form {
     .flex-2 {
         display: flex;
         flex-direction: column;
+        padding: 0rem 6.25rem 20rem 6.25rem;
     }
     h1 {
         font-size: 2rem;
@@ -661,24 +655,40 @@ form {
         width: 25vh;
     }
     #conheca {
-        padding: 20px;
+        margin: auto;
+    }
+    .item2-content2 {
+        flex-direction: column; 
+        gap: 0;     
+    }
+    .vanmos-motorista {
+        flex-direction: column;
+        gap: 0;
+    }
+    .local {
+        margin: auto;
+    }
+    .notificacao {
+        margin: auto;
+    }
+    .pagamentos {
+        margin: auto;
+    }
+    .item2-content1 {
+        margin-top: 80px;
+    }
+    #conheca {
+        margin-bottom: 80px;
     }
     h2 {
         font-size: 2rem;
         white-space: initial;
         margin-top: 40px;
     }
-    .item2-content2 {
-        gap: 0px 60px;
-        justify-content: center;
-        margin: 20px;
-    }
     #como-funciona {
         padding: 20px;
     }
     h3 {
-        position: relative;
-        top: 25px;
         font-size: 2rem;
     }
     #parceiros {
@@ -689,6 +699,9 @@ form {
         top: 20px;
         font-size: 2rem;
     }
+    .apps {
+        flex-wrap: wrap;
+    }
     #contato {
         padding: 20px;
     }
@@ -698,9 +711,6 @@ form {
         grid-template-columns: 1fr 1fr 1fr;
         margin: auto;
     }
-    .maps {
-        width: 25rem;
-    }
     h5 {
         position: relative;
         top: 20px;
@@ -708,6 +718,7 @@ form {
     }
     h6 {
         font-size: 2rem;
+        margin-top: 60px;
     }
     .infos {
         margin-bottom: 20px;
@@ -820,9 +831,6 @@ form {
     h4 {
         font-size: 1.5rem;
     }
-    .produtos img {
-        width: 15rem;
-    }
     #logo-elevic {
         width: 10rem;
     }
@@ -835,14 +843,6 @@ form {
     #fale-conosco {
         display: flex;
         flex-direction: column;
-    }
-    .forma-contato {
-        font-size: 0.875rem;
-        white-space: initial;
-    }
-    .maps {
-        width: 18rem;
-        height: 18rem;
     }
     .infos {
         font-size: 0.875rem;
