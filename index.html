@@ -43,7 +43,9 @@
         <div class="item1-content2">
             <h2> O QUE É A VANMOS? </h2>
             <hr>
-            <div class="text-vanmos"><span>O app que chega para revolucionar o mercado do Transporte Escolar com soluções práticas e rápidas</span></div>
+            <div class="text-vanmos">
+                <span>O app que chega para revolucionar o mercado do Transporte Escolar com soluções práticas e rápidas</span>
+            </div>
         </div>
         <div class="item2-content2">
             <div class="local">
@@ -88,7 +90,7 @@
                 </div>
                 <div id="app-motorista">
                     <img class="imagem1" src="./images/vanmos-motorista.svg" alt="Construindo a presença digital da empresa">
-                </div>                
+                </div>
             </div>
             <div>
                 <p>*Screenshots serão disponibilizadas em breve</p>
@@ -97,59 +99,35 @@
     </div>
     <div class="em-breve">
         <p>Em breve nosso aplicativo estará disponível nas principais lojas</p>
-    <div class="badges">
-        <img onclick="emBreve()" src="./Images/app-store-badge.svg" alt="">
-        <img onclick="emBreve()" id="gplay" src="./Images/google-play-badge.png" alt="">
-    </div>
+        <div class="badges">
+            <img onclick="emBreve()" src="./Images/app-store-badge.svg" alt="">
+            <img onclick="emBreve()" id="gplay" src="./Images/google-play-badge.png" alt="">
+        </div>
     </div>
     <div id="contato">
         <h6>FALE CONOSCO</h6>
-        <div id="fale-conosco">
-            <div>
-                <p class="forma-contato">Escolha a melhor forma de contato</p>
-                <a href="http://wa.me/5538991767351" target="_blank"><button class="button-wpp">Whatsapp</button></a>
-                <button class="button-email" onclick="clickEmail()">Email</button>
-                <form id="formulario" action="GET">
-                    <div>
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome">
-                    </div>
-                    <div class="e-mail">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="phone">
-                        <label for="tel">Telefone:</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-                    <div>
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit">Enviar</button>
-                    </div>
-                </form>
-                </form>
-            </div>
-            <div class="infos">
-                <address> <i class="fa fa-map-marker"></i> Avenida das Américas, 165, Dr. João Alves</address>
-                <span> <i class="fa fa-envelope"></i> tecz@tecz.com</span><br/>
-                <span> <i class=" fa fa-phone"></i> 38 9 9176-7351</span><br/>
-                <div class="follow">
-                    <span>Siga-nos</span>
-                </div>
-                <div class="social">
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href=""><i class="fa fa-facebook"></i></a>
-                </div>
-            </div>
-            <div>
-                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.5832104971582!2d-43.855311184588224!3d-16.747635351583348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xab549158e37c2f%3A0xb3b7b80412cab4b2!2sAv.%20das%20Am%C3%A9ricas%2C%20165%20-%20Vila%20Telma%2C%20Montes%20Claros%20-%20MG%2C%2039402-297!5e0!3m2!1spt-BR!2sbr!4v1595793695421!5m2!1spt-BR!2sbr"
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
+        <div class="text-vanmos">
+            <span>Para mais informações ou sugestões, nos mande um e-mail, teremos o prazer de te responder!</span>
         </div>
-    </div>
+        <div id="fale-conosco">
+            <form id="formulario" action="POST">
+                <div>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                </div>
+                <div class="e-mail">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="phone">
+                    <input type="tel" name="phone" id="phone" placeholder="Telefone">
+                </div>
+                <div>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="fim-site">
         <p>Copyright &copy; Vanmos</p>

@@ -147,11 +147,13 @@ h1 {
     font-weight: 700;
     cursor: pointer;
 }
+
 .buttons button:hover {
     background-color: #dfa12b;
     color: white;
     transition: all 0.3s;
 }
+
 
 /* Segunda Div */
 
@@ -273,10 +275,6 @@ hr {
 
 /* Terceira Div */
 
-#como-funciona {
-    background-color: #325ca7;
-}
-
 h4 {
     grid-area: 1/1;
     text-align: center;
@@ -289,85 +287,20 @@ h4 {
 
 #como-funciona {
     padding: 6.25rem 25rem;
+    background-color: #325ca7;
 }
 
 #como-funciona img {
     filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, .1));
+    position: relative;
+    right: 20px;
 }
 
-#apps {
+.apps {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0px 80px;
-}
-
-.portfolio1 {
-    background-color: rgba(247, 243, 243, 0.856);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-    padding: 3.75rem 1.875rem;
-    width: 25rem;
-    height: 23rem;
-    margin-top: 5rem;
-    border-radius: 5%;
-    cursor: pointer;
-}
-
-.portfolio1 img {
-    position: relative;
-    right: 1.875rem;
-    bottom: 3.75rem;
-    width: 25rem;
-    border-radius: 5% 5% 0% 0%;
-}
-
-.portfolio1 p {
-    margin-top: -50px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 5px;
-}
-
-.portfolio1 span {
-    font-size: 0.875rem;
-}
-
-.portfolio1 i {
-    padding: 15px 10px;
-}
-
-.portfolio2 {
-    background-color: rgba(247, 243, 243, 0.856);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-    padding: 60px 30px;
-    width: 25rem;
-    height: 23rem;
-    margin-top: 80px;
-    border-radius: 5%;
-    cursor: pointer;
-}
-
-.portfolio2 img {
-    position: relative;
-    right: 30px;
-    bottom: 60px;
-    width: 25rem;
-    border-radius: 5% 5% 0% 0%;
-}
-
-.portfolio2 p {
-    margin-top: -50px;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 5px;
-}
-
-.portfolio2 span {
-    font-size: 0.875rem;
-}
-
-.portfolio2 i {
-    padding: 15px 10px;
 }
 
 
@@ -418,6 +351,7 @@ h5 {
     background-color: #325ca7;
     padding: 50px;
 }
+
 .em-breve p {
     color: #dfa12b;
     font-family: 'Fredoka One', sans-serif;
@@ -451,8 +385,6 @@ h6 {
     color: #325ca7;
     font-family: 'Fredoka One', sans-serif;
     white-space: initial;
-    margin-bottom: 40px;
-    padding-bottom: 6rem;
 }
 
 #contato {
@@ -467,63 +399,23 @@ h6 {
 }
 
 #fale-conosco {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
     white-space: initial;
-    grid-gap: 50px;
-}
-
-.button-wpp {
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--title-white);
-    background: linear-gradient(118.1deg, #25d366 -2.02%, #11ad4a 129.72%);
-    cursor: pointer;
-    transition: all 0.5s;
-    position: relative;
-    top: 20px;
-    color: white;
-    margin: 10px;
-}
-
-.button-email {
-    padding: 12px 50px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--title-white);
-    background: rgba(247, 243, 243, 0.856);
-    cursor: pointer;
-    transition: all 0.5s;
-    position: relative;
-    top: 20px;
-    color: red;
-    margin: 10px;
 }
 
 #formulario {
-    display: none;
     padding: 20px;
     white-space: initial;
-    background-color: rgba(247, 243, 243, 0.856);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
-    border-radius: 5%;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #formulario button {
-    padding: 12px 70px;
+    padding: 15px 275px;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
-    color: var(--title-white);
-    background: linear-gradient(135deg, rgba(9, 9, 121, 0.7) 0%, rgba(0, 194, 255, 0.7) 100%);
+    background-color: #325ca7;
     cursor: pointer;
     transition: all 0.5s;
     color: white;
@@ -531,57 +423,24 @@ h6 {
 }
 
 #formulario input {
-    width: 200px;
-    height: 30px;
-    margin: 8px;
-}
-
-#formulario textarea {
-    margin-top: 20px;
-    position: relative;
-    width: 280px;
+    border: solid 0.1px;
+    border-radius: 8px;
+    width: 31vw;
+    height: 5vh;
+    margin: 10px;
     font-family: 'Poppins', sans-serif;
 }
 
-.phone {
-    position: relative;
-    right: 10px;
-}
-
-.e-mail {
-    position: relative;
-    left: 2px;
+#formulario textarea {
+    border: solid 0.1px;
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 31vw;
+    font-family: 'Poppins', sans-serif;
 }
 
 form {
     white-space: initial;
-}
-
-.infos {
-    text-align: left;
-    line-height: 3rem;
-    font-size: 16px;
-}
-
-.follow span {
-    font-weight: bold;
-    font-size: 24px;
-    position: relative;
-}
-
-.social i {
-    font-size: 1.4rem;
-    width: 8%;
-    cursor: pointer;
-}
-
-.social a {
-    text-decoration: none;
-    color: black;
-}
-
-.social a:hover {
-    color: blue;
 }
 
 .fim-site {
@@ -594,21 +453,28 @@ form {
 }
 
 @media screen and (min-width: 2000px) {
-    .imagem1 {
-        width: 75vh;
-        position: relative;
-        left: 70px;
+    .flex-2 {
+        padding: 0rem 25rem 12rem 25rem;
+        margin-top: -40px;
     }
-    #apps {
+    .produtos {
+        padding: 6.25rem 25rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .imagem1 {
+        width: 13vw;
+    }
+    .apps {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    #formulario {
-        width: 35rem;
-    }
     #myTopNav {
         display: block;
+    }
+    #formulario button {
+        padding: 15px 290px;
     }
 }
 
@@ -623,7 +489,9 @@ form {
         font-size: 1.5rem;
     }
     .flex-2 {
-        padding: 6.25rem 5rem;
+        padding: 0rem 6.25rem 20rem 6.25rem;
+        margin-top: -40px;
+        margin-bottom: -250px;
     }
     h1 {
         font-size: 2.5rem;
@@ -636,7 +504,7 @@ form {
         font-size: 1rem;
     }
     .imagem1 {
-        width: 65vh;
+        width: 18vw;
     }
     #conheca {
         padding: 6.25rem 5rem;
@@ -679,9 +547,6 @@ form {
 }
 
 @media screen and (max-width: 1280px) {
-    #contato {
-        padding: 6.25rem 4rem;
-    }
     #fale-conosco {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -701,26 +566,39 @@ form {
 }
 
 @media screen and (max-width: 1024px) {
-    .topo {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-    .item2-content2 {
-        gap: 50px;
-    }
     .flex-2 {
-        position: relative;
+        padding: 0rem 6.25rem 30rem 6.25rem;
     }
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 3.5rem;
     }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    h5 {
+        font-size: 2rem;
+    }
+    h6 {
+        font-size: 2rem;
+    }
     .p1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    span {
+        font-size: 1.1rem;
     }
     .imagem1 {
-        width: 468.5px;
+        width: 20vw;
     }
     #conheca {
         padding: 20px;
@@ -733,7 +611,7 @@ form {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 916px) {
     #myTopNav {
         display: none;
     }
@@ -768,11 +646,8 @@ form {
         padding: 20px;
     }
     .flex-2 {
-        padding: 20px;
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
-        ;
     }
     h1 {
         font-size: 2rem;
@@ -783,7 +658,7 @@ form {
     }
     .imagem1 {
         margin-top: 40px;
-        width: 45vh;
+        width: 25vh;
     }
     #conheca {
         padding: 20px;
