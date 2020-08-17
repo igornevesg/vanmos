@@ -22,3 +22,14 @@ function abrirMenu() {
 function emBreve() {
     alert('Aplicativo disponível em breve')
 }
+
+function imageChange(image) {
+    if (image.matches) {
+        document.getElementById("image-funciona").src = "./Images/how-it-works-vertical.svg"
+    } else {
+        document.getElementById("image-funciona").src = "./Images/how-it-works.svg"
+    }
+}
+var image = window.matchMedia("(max-width: 425px)")
+imageChange(image);
+image.addListener(imageChange)

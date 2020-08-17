@@ -331,6 +331,7 @@ h5 {
     justify-content: center;
 }
 
+
 /* Quinta Div */
 
 .em-breve {
@@ -435,6 +436,9 @@ form {
 }
 
 @media screen and (min-width: 2000px) {
+    .topnav a {
+        font-size: 0.9rem;
+    }
     .flex-2 {
         padding: 0rem 25rem 12rem 25rem;
         margin-top: -40px;
@@ -531,7 +535,7 @@ form {
     }
 }
 
-@media screen and (max-width: 1024px) {    
+@media screen and (max-width: 1024px) {
     .topo {
         padding: 20px 60px;
     }
@@ -592,16 +596,13 @@ form {
     #formulario button {
         padding: 15px 27.8vw;
     }
-    
     #formulario input {
         width: 60vw;
         height: 5vh;
     }
-    
     #formulario textarea {
         width: 60vw;
-    }    
-    
+    }
 }
 
 @media screen and (max-width: 916px) {
@@ -658,8 +659,8 @@ form {
         margin: auto;
     }
     .item2-content2 {
-        flex-direction: column; 
-        gap: 0;     
+        flex-direction: column;
+        gap: 0;
     }
     .vanmos-motorista {
         flex-direction: column;
