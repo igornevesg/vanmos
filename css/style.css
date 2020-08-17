@@ -34,9 +34,9 @@ body {
 
 .logo {
     float: left;
-    width: 15rem;
+    width: 7rem;
     position: relative;
-    bottom: 40px;
+    left: 50px;
 }
 
 .topnav {
@@ -446,8 +446,11 @@ form {
 }
 
 @media screen and (min-width: 2000px) {
+    .topo {
+        padding-bottom: 100px;
+    }
     .topnav a {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .flex-2 {
         padding: 0rem 25rem 12rem 25rem;
@@ -486,6 +489,10 @@ form {
     }
     .topo {
         padding: 20px;
+        padding-bottom: 100px;
+    }
+    .logo {
+        left: 80px;
     }
     #inicio {
         font-size: 1.5rem;
@@ -547,7 +554,6 @@ form {
     .badges img {
         width: 15vw;
     }
-    
     #gplay {
         width: 18vw;
     }
@@ -569,6 +575,12 @@ form {
 @media screen and (max-width: 1024px) {
     .topo {
         padding: 20px 60px;
+        padding-bottom: 90px;
+    }
+    .logo {
+        left: 40px;
+        width: 6rem;
+        margin-top: 10px;
     }
     .flex-2 {
         padding: 0rem 6.25rem 30rem 6.25rem;
@@ -673,7 +685,11 @@ form {
         background-color: rgba(214, 215, 228);
     }
     .topo {
-        padding: 20px;
+        padding: 30px 55px;
+        padding-bottom: 80px;
+    }
+    .logo {
+        width: 5rem;
     }
     .flex-2 {
         display: flex;
@@ -781,7 +797,6 @@ form {
     .badges img {
         width: 20vw;
     }
-    
     #gplay {
         width: 23vw;
     }
@@ -789,27 +804,24 @@ form {
         font-size: 2rem;
         margin-top: 60px;
     }
-    .infos {
-        margin-bottom: 20px;
-    }
-    .follow {
-        margin-top: 20px;
-    }
-    .button-email {
-        margin-bottom: 20px;
-    }
 }
 
 @media screen and (max-width: 500px) {
+    .flex-2 {
+        padding: 0rem 2.25rem 20rem 2.25rem;
+    }
+    .buttons button {
+        padding: 3vw 12vw;
+        font-size: 14px;
+    }
     .item1-content1 {
         margin: auto;
         padding: 0%;
         text-align: center;
     }
     .logo {
-        padding: 0px;
-        width: 8rem;
-        text-align: right;
+        width: 4.5rem;
+        left: -15px;
     }
     #botao-menu {
         padding: 0px;
@@ -834,18 +846,15 @@ form {
         font-size: 0.875rem;
     }
     .imagem1 {
-        width: 18rem;
-        margin: auto;
-        padding: 20px 0px;
-        position: relative;
-        right: 10px;
-        top: 40px;
+        width: 40vw;
     }
     h2 {
         font-size: 1.5rem;
         line-height: 2rem;
         margin-top: 20px;
-        margin-bottom: -80px;
+    }
+    .text-vanmos {
+        width: 40vw;
     }
     .local {
         width: 17rem;
@@ -865,43 +874,8 @@ form {
     h3 {
         font-size: 1.5rem;
     }
-    .portfolio1 {
-        width: 18rem;
-        height: 20rem;
-    }
-    .portfolio1 img {
-        width: 18rem;
-    }
-    .portfolio1 p {
-        font-size: 18px;
-        margin-top: -50px;
-    }
-    .portfolio1 span {
-        font-size: 12px;
-    }
-    .portfolio2 {
-        width: 18rem;
-        height: 20rem;
-    }
-    .portfolio2 img {
-        position: relative;
-        right: 30px;
-        bottom: 60px;
-        width: 18rem;
-        border-radius: 5% 5% 0% 0%;
-    }
-    .portfolio2 p {
-        font-size: 18px;
-        margin-top: -40px;
-    }
-    .portfolio2 span {
-        font-size: 12px;
-    }
     h4 {
         font-size: 1.5rem;
-    }
-    #logo-elevic {
-        width: 10rem;
     }
     h5 {
         font-size: 1.5rem;
@@ -909,14 +883,54 @@ form {
     h6 {
         font-size: 1.5rem;
     }
+    #app img {
+        width: 40vw;
+    }
+    #app-motorista img {
+        width: 40vw;
+    }
+    #como-funciona img {
+        right: 0px;
+    }
+    .badges img {
+        width: 30vw;
+    }
+    #gplay {
+        width: 40vw;
+    }
     #fale-conosco {
         display: flex;
         flex-direction: column;
     }
-    .infos {
-        font-size: 0.875rem;
+    #formulario button {
+        padding: 15px 35vw;
+        margin: 0;
+        margin-top: 15px;
+    }
+    #formulario input {
+        width: 81vw;
+        height: 5vh;
+        margin: 0;
+        margin-top: 15px;
+    }
+    #formulario textarea {
+        width: 81vw;
+        margin: 0;
+        margin-top: 15px;
     }
     .fim-site {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 4rem;
+    }
+    .em-breve p {
+        font-size: 1rem;
+    }
+    #formulario button {
+        padding: 12px 100px;
     }
 }
