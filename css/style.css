@@ -203,6 +203,7 @@ hr {
 
 .item2-content2 i {
     color: #325ca7;
+    font-size: 4vw;
 }
 
 .vanmos-motorista {
@@ -297,8 +298,17 @@ h4 {
 .apps {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    gap: 0px 80px;
+    margin: auto;
+}
+
+#app img {
+    width: 17vw;
+    margin: auto 50px;
+}
+
+#app-motorista img {
+    width: 17vw;
+    margin: auto 50px;
 }
 
 
@@ -355,11 +365,11 @@ h5 {
 }
 
 .badges img {
-    width: 11rem;
+    width: 10vw;
 }
 
 #gplay {
-    width: 14rem;
+    width: 13vw;
 }
 
 
@@ -456,6 +466,12 @@ form {
         flex-wrap: wrap;
         justify-content: center;
     }
+    #app img {
+        width: 13vw;
+    }
+    #app-motorista img {
+        width: 13vw;
+    }
     #myTopNav {
         display: block;
     }
@@ -502,6 +518,14 @@ form {
     #como-funciona {
         padding: 6.25rem 5rem;
     }
+    #app img {
+        width: 18vw;
+        margin: auto;
+    }
+    #app-motorista img {
+        width: 18vw;
+        margin: auto;
+    }
     h3 {
         font-size: 3rem;
     }
@@ -519,6 +543,13 @@ form {
     }
     h6 {
         font-size: 3rem;
+    }
+    .badges img {
+        width: 15vw;
+    }
+    
+    #gplay {
+        width: 18vw;
     }
 }
 
@@ -587,6 +618,9 @@ form {
     #conheca {
         padding: 20px;
     }
+    .imagem2 {
+        width: 15vw;
+    }
     #fale-conosco {
         display: flex;
         flex-direction: column;
@@ -617,6 +651,7 @@ form {
         font-size: 1.75rem;
         display: block;
         float: right;
+        color: white;
     }
     .topnav {
         position: relative;
@@ -632,6 +667,7 @@ form {
         background-color: rgb(241, 235, 235);
         margin: 0;
         width: 15rem;
+        color: black;
     }
     .topnav a:hover {
         background-color: rgba(214, 215, 228);
@@ -655,8 +691,21 @@ form {
         margin-top: 40px;
         width: 25vh;
     }
+    .buttons button {
+        padding: 2vh 5vw;
+        font-size: 2.2vw;
+    }
     #conheca {
         margin: auto;
+    }
+    .apps {
+        margin-top: 20px;
+    }
+    #app img {
+        width: 30vw;
+    }
+    #app-motorista img {
+        width: 30vw;
     }
     .item2-content2 {
         flex-direction: column;
@@ -669,11 +718,20 @@ form {
     .local {
         margin: auto;
     }
+    .local i {
+        font-size: 7vw;
+    }
     .notificacao {
         margin: auto;
     }
+    .notificacao i {
+        font-size: 7vw;
+    }
     .pagamentos {
         margin: auto;
+    }
+    .pagamentos i {
+        font-size: 7vw;
     }
     .item2-content1 {
         margin-top: 80px;
@@ -717,6 +775,16 @@ form {
         top: 20px;
         font-size: 2rem;
     }
+    .em-breve p {
+        font-size: 1.5rem;
+    }
+    .badges img {
+        width: 20vw;
+    }
+    
+    #gplay {
+        width: 23vw;
+    }
     h6 {
         font-size: 2rem;
         margin-top: 60px;
@@ -732,7 +800,7 @@ form {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     .item1-content1 {
         margin: auto;
         padding: 0%;

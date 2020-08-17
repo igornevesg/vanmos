@@ -30,6 +30,6 @@ function imageChange(image) {
         document.getElementById("image-funciona").src = "./Images/how-it-works.svg"
     }
 }
-var image = window.matchMedia("(max-width: 425px)")
+var image = window.matchMedia("(max-width: 500px)")
 imageChange(image);
 image.addListener(imageChange)
