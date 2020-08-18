@@ -901,6 +901,15 @@
             height: 15rem;
             padding: 30px 0px;
         }
+        .local i {
+            font-size: 11vw;
+        }
+        .notificacao i {
+            font-size: 11vw;
+        }
+        .pagamentos i {
+            font-size: 11vw;
+        }
         h3 {
             font-size: 1.5rem;
         }
@@ -915,10 +924,10 @@
             font-size: 1.5rem;
         }
         #app img {
-            width: 40vw;
+            width: 50vw;
         }
         #app-motorista img {
-            width: 40vw;
+            width: 50vw;
         }
         #como-funciona img {
             right: 0px;
