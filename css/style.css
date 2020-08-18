@@ -27,6 +27,7 @@ body {
 .topo {
     flex: 1;
     padding: 1.25rem 21.875rem;
+    padding-bottom: 3.25rem;
     background-image: url('../Images/bg-top.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,7 +104,7 @@ body {
 }
 
 h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: #dfa12b;
     text-align: left;
     line-height: 4rem;
@@ -165,7 +166,7 @@ h1 {
 h2 {
     padding: 1.25rem;
     grid-area: 1/1;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Fredoka One', sans-serif;
     letter-spacing: 0.1rem;
     white-space: initial;
@@ -175,7 +176,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #dfa12b;
     padding-top: 80px;
     font-family: 'Fredoka One', sans-serif;
@@ -277,7 +278,7 @@ hr {
 h4 {
     grid-area: 1/1;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #dfa12b;
     font-family: 'Fredoka One', sans-serif;
     white-space: initial;
@@ -317,7 +318,7 @@ h4 {
 h5 {
     grid-area: 1/1;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #325ca7;
     font-family: 'Fredoka One', sans-serif;
     white-space: initial;
@@ -378,7 +379,7 @@ h5 {
 h6 {
     grid-area: 1/1;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #325ca7;
     font-family: 'Fredoka One', sans-serif;
     white-space: initial;
@@ -452,6 +453,10 @@ form {
     .topnav a {
         font-size: 1rem;
     }
+    .logo {
+        width: 6rem;
+        margin-top: 10px;
+    }
     .flex-2 {
         padding: 0rem 25rem 12rem 25rem;
         margin-top: -40px;
@@ -483,6 +488,20 @@ form {
     }
 }
 
+@media screen and (max-width: 1744px) {
+    .topo {
+        flex: 1;
+        padding: 1.25rem 10.875rem;
+        background-image: url('../Images/bg-top.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .flex-2 {
+        padding: 0rem 12rem 12rem 12rem;
+        background-size: 2100px;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     #myTopNav {
         display: block;
@@ -501,6 +520,7 @@ form {
         padding: 0rem 6.25rem 20rem 6.25rem;
         margin-top: -40px;
         margin-bottom: -250px;
+        background-size: cover;
     }
     h1 {
         font-size: 2.5rem;
@@ -556,6 +576,16 @@ form {
     }
     #gplay {
         width: 18vw;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1385px) {
+    .flex-2 {
+        padding: 0rem 6.25rem 30rem 6.25rem;
+    }
+    h2 {
+        margin-top: -80px;
     }
 }
 
