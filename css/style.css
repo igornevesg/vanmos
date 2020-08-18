@@ -679,7 +679,7 @@
         }
         .topnav {
             position: relative;
-            top: 35px;
+            top: 5px;
             left: 20px;
             margin-top: 5px;
             margin-bottom: -420px;
@@ -692,13 +692,15 @@
             margin: 0;
             width: 15rem;
             color: black;
+            z-index: 1;
         }
         .topnav a:hover {
             background-color: rgba(214, 215, 228);
         }
         .topo {
             padding: 30px 55px;
-            padding-bottom: 0px;
+            padding-bottom: 80px;
+            z-index: 1;
         }
         .logo {
             width: 5rem;
@@ -707,6 +709,7 @@
             display: flex;
             flex-direction: column;
             padding: 0rem 6.25rem 20rem 6.25rem;
+            z-index: 0;
         }
         h1 {
             font-size: 2rem;
