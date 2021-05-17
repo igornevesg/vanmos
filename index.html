@@ -1,140 +1,575 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="PT-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanmos | Aplicativo para Transporte Escolar</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />    <meta name="author" content="INSPIRO" />    
+	<meta name="description" content="Themeforest Template Polo, html template">
     <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>Vanmos | Aplicativo para Transporte Escolar</title>
+    <!-- Stylesheets & Fonts -->
+    <link href="css/plugins.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="./webfonts/fa-solid-900.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel=" preload " href="./webfonts/fa-regular-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <!-- LOAD JQUERY LIBRARY -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <!-- LOADING FONTS AND ICONS -->
+	<link href="//fonts.googleapis.com/css?family=Poppins:500%2C700" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" type="text/css" href="plugins/slider-revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" type="text/css" href="plugins/slider-revolution/fonts/font-awesome/css/font-awesome.css">
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="plugins/slider-revolution/css/settings.css">
+	<!-- REVOLUTION LAYERS STYLES -->
+	<style></style>
+	<style type="text/css">
+		.tp-opacity {
+			opacity: 0.35 !important
+		}
+
+		.tp-nopointer {
+			pointer-events: none !important
+		}
+	</style>
+	<!-- REVOLUTION JS FILES -->
+	<script type="text/javascript" src="plugins/slider-revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="plugins/slider-revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- POLYFOLD ADD-ON FILES -->
+	<link rel='stylesheet' href='plugins/slider-revolution/revolution-addons/polyfold/css/revolution.addon.polyfold.css?ver=1.0.1' type='text/css' media='all' />
+	<script type='text/javascript' src='plugins/slider-revolution/revolution-addons/polyfold/js/revolution.addon.polyfold.min.js?ver=1.0.1'></script>
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+	<script type="text/javascript" src="plugins/slider-revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="plugins/slider-revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script type="text/javascript" src="plugins/slider-revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="plugins/slider-revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="plugins/slider-revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="plugins/slider-revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="plugins/slider-revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script type="text/javascript" src="plugins/slider-revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="plugins/slider-revolution/js/extensions/revolution.extension.video.min.js"></script>
+</head>
+    
 </head>
 
-<body id="container">
-    <header class="topo">
-        <a href="#"> <img class="logo" src="./Images/logo-branca.png" alt="Logotipo Vanmos"> </a>
-        <i onclick="abrirMenu()" class="fa fa-bars" id="botao-menu"></i>
-        <nav class="topnav" id="myTopNav">
-            <ul id="inicio">
-                <a id="menu-responsivo" href="#container">Home</a>
-                <a href="#conheca">Conheça</a>
-                <a href="#nossos-produtos">Nossos Produtos</a>
-                <a href="#contato">Contato</a>
-            </ul>
-        </nav>
-    </header>
+<body>
 
-    <div class="flex-2">
-        <div class="item1-content1">
-            <h1> O MELHOR DO TRANSPORTE ESCOLAR NA PALMA DA SUA MÃO </h1>
-            <p class="p1">O aplicativo Vanmos traz agilidade ao motorista e segurança aos alunos, de forma símples e eficiente</p>
-            <span class="saiba-mais" href="#servicos">Em breve</span>
-            <div class="buttons">
-                <button onclick="emBreve()">App Store</button>
-                <button onclick="emBreve()">Google Play</button>
-            </div>
-        </div>
-        <div class="item2-content1">
-            <img class="imagem1" src="./Images/mobile.svg" alt="Celular com o aplicativo">
-        </div>
-    </div>
-    <div id="conheca">
-        <div class="item1-content2">
-            <h2> O QUE É A VANMOS? </h2>
-            <hr>
-            <div class="text-vanmos">
-                <span>O app que chega para revolucionar o mercado do Transporte Escolar com soluções práticas e rápidas</span>
-            </div>
-        </div>
-        <div class="item2-content2">
-            <div class="local">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <p>Acompanhe a localização da sua van escolar em tempo real</p>
-            </div>
-            <div class="notificacao">
-                <i class="fa fa-bell" aria-hidden="true"></i>
-                <p>Receba notificações quando o motorista estiver chegando em sua casa ou na escola/faculdade</p>
-            </div>
-            <div class="pagamentos">
-                <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
-                <p>Realize pagamentos ao motorista direto do aplicativo e receba um recibo digital</p>
-            </div>
-        </div>
-        <h3>VANMOS MOTORISTA</h3>
-        <div class="vanmos-motorista">
-            <div class="local">
-                <i class="fa fa-pie-chart" aria-hidden="true"></i>
-                <p>Tenha todos os dados do seu negócio direto do aplicativo para ajudar no gerenciamento</p>
-            </div>
-            <div class="notificacao">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <p>Seja encontrado pelos alunos com apenas um clique</p>
-            </div>
-            <div class="pagamentos">
-                <i class="fa fa-usd" aria-hidden="true"></i>
-                <p>Receba seus pagamentos via boleto ou cartão e retire no mesmo dia</p>
-            </div>
-        </div>
-    </div>
-    <div id="como-funciona">
-        <h4> ENTENDA COMO FUNCIONA </h4>
-        <img id="image-funciona" src="./Images/how-it-works.svg" alt="">
-    </div>
-    <div id="nossos-produtos">
-        <div class="produtos">
-            <h5>NOSSOS PRODUTOS</h5>
-            <div class="apps">
-                <div id="app">
-                    <img class="imagem2" src="./Images/vanmos.svg" alt="Construindo a presença digital da empresa">
-                </div>
-                <div id="app-motorista">
-                    <img class="imagem2" src="./Images/vanmos-motorista.svg" alt="Construindo a presença digital da empresa">
-                </div>
-            </div>
-            <div>
-                <p>*Screenshots serão disponibilizadas em breve</p>
-            </div>
-        </div>
-    </div>
-    <div class="em-breve">
-        <p>Em breve nosso aplicativo estará disponível nas principais lojas</p>
-        <div class="badges">
-            <img onclick="emBreve()" src="./Images/app-store-badge.svg" alt="">
-            <img onclick="emBreve()" id="gplay" src="./Images/google-play-badge.png" alt="">
-        </div>
-    </div>
-    <div id="contato">
-        <h6>FALE CONOSCO</h6>
-        <div class="text-vanmos">
-            <span>Para mais informações ou sugestões, nos mande um e-mail, teremos o prazer de te responder!</span>
-        </div>
-        <div id="fale-conosco">
-            <form id="formulario" action="POST">
-                <div>
-                    <input type="text" name="nome" id="nome" placeholder="Nome">
-                </div>
-                <div class="e-mail">
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                </div>
-                <div class="phone">
-                    <input type="tel" name="phone" id="phone" placeholder="Telefone">
-                </div>
-                <div>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                </div>
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="fim-site">
-        <p>Copyright &copy; Vanmos</p>
-        <p>Feito com ❤️ por Tecz</p>
-    </div>
 
-    <script src="./js/menu.js"></script>
+    <!-- Body Inner -->
+    <div class="body-inner">
+
+        <!-- Header -->
+        <header id="header" data-transparent="true" class="light submenu-light">
+            <div class="header-inner">
+                <div class="container">
+                    <!--Logo-->
+                    <div id="logo"> <a href="index.html"><span class="logo-default">POLO</span><span class="logo-dark">POLO</span></a> </div>
+                    <!--End: Logo-->
+                    <!--Header Extras-->
+                    <div class="header-extras">
+                        <ul>
+                                <div class="p-dropdown"> <a href="#"><i class="icon-globe"></i><span>PT-BR</span></a>
+                                    <ul class="p-dropdown-content">
+                                        <li><a href="#">Português</a></li>
+                                        <li><a href="#">English</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end: Header Extras-->
+                    <!--Navigation Resposnive Trigger-->
+                    <div id="mainMenu-trigger"> <a class="lines-button x"><span class="lines"></span></a> </div>
+                    <!--end: Navigation Resposnive Trigger-->
+                    <!--Navigation-->
+                    <div id="mainMenu">
+                        <div class="container">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="dropdown"><a href="#">Conheça</a>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Nossos Produtos</a>
+                                    </li>
+                                    <li class="dropdown mega-menu-item"><a href="#">Contato</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!--end: Navigation-->
+                </div>
+            </div>
+        </header>
+        <!-- end: Header -->
+            
+        <!-- SIMPLE, IT'S GREAT APP -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 m-b-30" style="height:556px">
+                        <div class="image-absolute" data-animate="fadeInLeft" data-animate-delay="800">
+                            <img src="images/app-iphone-dark.png" alt="">
+                        </div>
+                        <div class="image-absolute" data-animate="fadeInLeft" data-animate-delay="400">
+                            <img src="images/app-iphone-white.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-animate="fadeInUp" data-animate-delay="1000">
+                        <div class="m-b-40">
+                            <h1 class="text-medium">O MELHOR DO TRANSPORTE ESCOLAR NA PALMA DA SUA MÃO</h1>
+                            <span class="lead">O aplicativo Vanmos traz agilidade ao motorista e segurança aos alunos, de forma símples e eficiente
+                            </span>
+                        </div>
+                    <a data-animate="fadeInUp" data-animate-delay="200" href="#" class="btn btn-outline"><span><i class="fab fa-apple"></i>App Store</span></a>
+                    <a data-animate="fadeInUp" data-animate-delay="300" href="#" class="btn btn-outline"><span><i class="fab fa-android"></i>Play Store</span></a>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+        </section>
+        <!-- SIMPLE, IT'S GREAT APP -->
+
+        <!-- Revolution Slider -->
+		<section id="slider">
+			<div id="rev_slider_12_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="app-showcase" data-source="gallery" style="margin:0px auto;padding:0px;margin-top:0px;margin-bottom:0px;">
+				<!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
+				<div id="rev_slider_12_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+					<ul>
+						<!-- SLIDE  -->
+						<li data-index="rs-30" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Template" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+							<!-- MAIN IMAGE -->
+							<img src="plugins/slider-revolution/assets/images/transparent.png" data-bgcolor='#325ca7' style='background:#325ca7' alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+							<!-- LAYERS -->
+							<!-- LAYER NR. 1 -->
+							<div class="tp-caption     rev_group rs-parallaxlevel-10" id="slide-30-layer-8" data-x="['left','left','center','center']" data-hoffset="['100','50','-240','-115']" data-y="['top','top','top','top']" data-voffset="['160','130','60','50']" data-width="['270','270','220','220']" data-height="170" data-whitespace="nowrap" data-type="group" data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-30-layer-55","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-30-layer-55","delay":""}]' data-responsive_offset="on" data-wrapper_class="tp-selecttoggle" data-frames='[{"delay":600,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; min-width: 270px; max-width: 270px; max-width: 170px; max-width: 170px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption   tp-resizeme tp-svg-layer" id="slide-30-layer-3" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="48" data-height="48" data-whitespace="nowrap" data-type="svg" data-svg_src="plugins/slider-revolution/assets/images/ic_free_breakfast_24px.svg" data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; min-width: 48px; max-width: 48px; max-width: 48px; max-width: 48px; color:#dfa12b;"> </div>
+								<!-- LAYER NR. 3 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-4" data-x="['left','left','left','left']" data-hoffset="['60','60','60','60']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="['201','201','160','160']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; min-width: 201px; max-width: 201px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color:rgba(255,255,255,1);font-family:Poppins;">Acompanhe a localização da sua van escolar em tempo real </div>
+								<!-- LAYER NR. 4 -->
+								<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-30-layer-5" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['45','45','45','45']" data-width="['270','270','210','210']" data-height="3" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":750,"frame":"0","from":"x:[100%];opacity:1;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;background-color:white;"> </div>
+								<!-- LAYER NR. 5 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-7" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="48" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; min-width: 48px; max-width: 48px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 700; color: #dfa12b;;font-family:Poppins;">01 </div>
+							</div>
+							<!-- LAYER NR. 7 -->
+							<div class="tp-caption     rev_group rs-parallaxlevel-10" id="slide-30-layer-10" data-x="['left','left','center','center']" data-hoffset="['99','49','0','114']" data-y="['top','top','top','top']" data-voffset="['360','330','60','50']" data-width="['270','270','220','220']" data-height="170" data-whitespace="nowrap" data-type="group" data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-30-layer-48","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-30-layer-48","delay":""}]' data-responsive_offset="on" data-wrapper_class="tp-selecttoggle" data-frames='[{"delay":800,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; min-width: 270px; max-width: 270px; max-width: 170px; max-width: 170px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
+								<!-- LAYER NR. 8 -->
+								<div class="tp-caption   tp-resizeme tp-svg-layer" id="slide-30-layer-11" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="48" data-height="48" data-whitespace="nowrap" data-type="svg" data-svg_src="plugins/slider-revolution/assets/images/ic_trending_up_24px.svg" data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; min-width: 48px; max-width: 48px; max-width: 48px; max-width: 48px; color: #dfa12b"> </div>
+								<!-- LAYER NR. 9 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-12" data-x="['left','left','left','left']" data-hoffset="['60','60','60','60']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="['201','201','160','160']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; min-width: 201px; max-width: 201px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: rgba(255,255,255,1);font-family:Poppins;">Receba notificações de proximidade </div>
+								<!-- LAYER NR. 10 -->
+								<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-30-layer-13" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['45','45','45','45']" data-width="['270','270','220','220']" data-height="3" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":750,"frame":"0","from":"x:[100%];opacity:1;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 14;background-color:rgba(255,255,255,1);"> </div>
+								<!-- LAYER NR. 11 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-14" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="48" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 15; min-width: 48px; max-width: 48px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 700; color: #dfa12b;font-family:Poppins;">02 </div>
+							</div>
+							<!-- LAYER NR. 13 -->
+							<div class="tp-caption     rev_group rs-parallaxlevel-10" id="slide-30-layer-16" data-x="['left','left','center','center']" data-hoffset="['100','50','240','-115']" data-y="['top','top','top','top']" data-voffset="['560','530','60','230']" data-width="['270','270','220','220']" data-height="170" data-whitespace="nowrap" data-type="group" data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-30-layer-49","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-30-layer-49","delay":""}]' data-responsive_offset="on" data-wrapper_class="tp-selecttoggle" data-frames='[{"delay":1000,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; min-width: 270px; max-width: 270px; max-width: 170px; max-width: 170px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
+								<!-- LAYER NR. 14 -->
+								<div class="tp-caption   tp-resizeme tp-svg-layer" id="slide-30-layer-17" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="48" data-height="48" data-whitespace="nowrap" data-type="svg" data-svg_src="plugins/slider-revolution/assets/images/ic_filter_drama_24px.svg" data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 18; min-width: 48px; max-width: 48px; max-width: 48px; max-width: 48px; color: #dfa12b;"> </div>
+								<!-- LAYER NR. 15 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-18" data-x="['left','left','left','left']" data-hoffset="['60','60','60','60']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="['201','201','160','160']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 19; min-width: 201px; max-width: 201px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: rgba(255,255,255,1);font-family:Poppins;">Realize pagamentos ao motorista direto do aplicativo e receba um recibo digital </div>
+								<!-- LAYER NR. 16 -->
+								<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-30-layer-19" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['45','45','45','45']" data-width="['270','270','220','220']" data-height="3" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":750,"frame":"0","from":"x:[100%];opacity:1;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20;background-color:rgba(255,255,255,1);"> </div>
+								<!-- LAYER NR. 17 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-20" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="48" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":500,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 21; min-width: 48px; max-width: 48px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 700; color: #dfa12b;font-family:Poppins;">03 </div>
+							</div>
+							<!-- LAYER NR. 19 -->
+							<div class="tp-caption     rev_group rs-parallaxlevel-10" id="slide-30-layer-28" data-x="['right','right','center','center']" data-hoffset="['100','50','-240','115']" data-y="['top','top','top','top']" data-voffset="['160','130','250','230']" data-width="['270','270','220','220']" data-height="170" data-whitespace="nowrap" data-type="group" data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-30-layer-51","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-30-layer-51","delay":""}]' data-responsive_offset="on" data-wrapper_class="tp-selecttoggle" data-frames='[{"delay":600,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 23; min-width: 270px; max-width: 270px; max-width: 170px; max-width: 170px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
+								<!-- LAYER NR. 20 -->
+								<div class="tp-caption   tp-resizeme tp-svg-layer" id="slide-30-layer-29" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="48" data-height="48" data-whitespace="nowrap" data-type="svg" data-svg_src="plugins/slider-revolution/assets/images/ic_lightbulb_outline_24px.svg" data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 24; min-width: 48px; max-width: 48px; max-width: 48px; max-width: 48px; color: #dfa12b;"> </div>
+								<!-- LAYER NR. 21 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-30" data-x="['left','left','left','left']" data-hoffset="['60','60','60','60']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="['201','201','160','160']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 25; min-width: 201px; max-width: 201px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: rgba(255,255,255,1);font-family:Poppins;">Tenha todos os dados do seu negócio direto do aplicativo para ajudar no gerenciamento </div>
+								<!-- LAYER NR. 22 -->
+								<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-30-layer-31" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['45','45','45','45']" data-width="['270','270','220','220']" data-height="3" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":750,"frame":"0","from":"x:[-100%];opacity:1;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 26;background-color:rgba(255,255,255,1);"> </div>
+								<!-- LAYER NR. 23 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-32" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="48" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 27; min-width: 48px; max-width: 48px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 700; color: #dfa12b;font-family:Poppins;">04 </div>
+							</div>
+							<!-- LAYER NR. 25 -->
+							<div class="tp-caption     rev_group rs-parallaxlevel-10" id="slide-30-layer-34" data-x="['right','right','center','center']" data-hoffset="['100','50','0','-115']" data-y="['top','top','top','top']" data-voffset="['360','330','250','410']" data-width="['270','270','220','220']" data-height="170" data-whitespace="nowrap" data-type="group" data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-30-layer-52","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-30-layer-52","delay":""}]' data-responsive_offset="on" data-wrapper_class="tp-selecttoggle" data-frames='[{"delay":800,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 29; min-width: 270px; max-width: 270px; max-width: 170px; max-width: 170px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
+								<!-- LAYER NR. 26 -->
+								<div class="tp-caption   tp-resizeme tp-svg-layer" id="slide-30-layer-35" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="48" data-height="48" data-whitespace="nowrap" data-type="svg" data-svg_src="plugins/slider-revolution/assets/images/ic_tag_faces_24px.svg" data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 30; min-width: 48px; max-width: 48px; max-width: 48px; max-width: 48px; color: #dfa12b;"> </div>
+								<!-- LAYER NR. 27 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-36" data-x="['left','left','left','left']" data-hoffset="['60','60','60','60']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="['201','201','160','160']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 31; min-width: 201px; max-width: 201px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: rgba(255,255,255,1);font-family:Poppins;">Seja encontrado pelos alunos com apenas um clique </div>
+								<!-- LAYER NR. 28 -->
+								<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-30-layer-37" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['45','45','45','45']" data-width="['270','270','220','220']" data-height="3" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":750,"frame":"0","from":"x:[-100%];opacity:1;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 32;background-color:rgba(255,255,255,1);"> </div>
+								<!-- LAYER NR. 29 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-38" data-x="['left','left','left','left']" data-hoffset="['-1','-1','-1','-1']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="48" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 33; min-width: 48px; max-width: 48px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 700; color: #dfa12b;font-family:Poppins;">05 </div>
+							</div>
+							<!-- LAYER NR. 31 -->
+							<div class="tp-caption     rev_group rs-parallaxlevel-10" id="slide-30-layer-40" data-x="['right','right','center','center']" data-hoffset="['100','50','240','115']" data-y="['top','top','top','top']" data-voffset="['560','530','250','410']" data-width="['270','270','220','220']" data-height="170" data-whitespace="nowrap" data-type="group" data-actions='[{"event":"mouseenter","action":"startlayer","layer":"slide-30-layer-53","delay":""},{"event":"mouseleave","action":"stoplayer","layer":"slide-30-layer-53","delay":""}]' data-responsive_offset="on" data-wrapper_class="tp-selecttoggle" data-frames='[{"delay":1000,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 35; min-width: 270px; max-width: 270px; max-width: 170px; max-width: 170px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
+								<!-- LAYER NR. 32 -->
+								<div class="tp-caption   tp-resizeme tp-svg-layer" id="slide-30-layer-41" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="48" data-height="48" data-whitespace="nowrap" data-type="svg" data-svg_src="plugins/slider-revolution/assets/images/ic_supervisor_account_24px.svg" data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 36; min-width: 48px; max-width: 48px; max-width: 48px; max-width: 48px; color: #dfa12b;"> </div>
+								<!-- LAYER NR. 33 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-42" data-x="['left','left','left','left']" data-hoffset="['60','60','60','60']" data-y="['top','top','top','top']" data-voffset="['60','60','60','60']" data-width="['201','201','160','160']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+100","speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 37; min-width: 201px; max-width: 201px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: rgba(255,255,255,1);font-family:Poppins;">Receba seus pagamentos via boleto ou cartão e retire no mesmo dia </div>
+								<!-- LAYER NR. 34 -->
+								<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-30-layer-43" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['45','45','45','45']" data-width="['270','270','220','220']" data-height="3" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":750,"frame":"0","from":"x:[-100%];opacity:1;","mask":"x:0px;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 38;background-color:rgba(255,255,255,1);"> </div>
+								<!-- LAYER NR. 35 -->
+								<div class="tp-caption   tp-resizeme" id="slide-30-layer-44" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="48" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 39; min-width: 48px; max-width: 48px; white-space: normal; font-size: 40px; line-height: 40px; font-weight: 700; color: #dfa12b;font-family:Poppins;">06 </div>
+							</div>
+							<!-- LAYER NR. 37 -->
+							<div class="tp-caption   tp-resizeme  tp-nopointer " id="slide-30-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','top']" data-voffset="['0','0','200','380']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-wrapper_class="tp-nopointer " data-frames='[{"delay":400,"speed":750,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 41;"><img src="plugins/slider-revolution/assets/images/object_iphone_1.png" alt="" data-ww="['1125px','1125px','1000px','1000px']" data-hh="['1125px','1125px','1000px','1000px']" width="1500" height="1500" data-no-retina> </div>
+							<!-- LAYER NR. 38 -->
+							<div class="tp-caption   tp-resizeme" id="slide-30-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','top']" data-voffset="['0','0','199','679']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":400,"speed":750,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 42;"><img src="plugins/slider-revolution/assets/images/phonescreen.jpg" alt="" data-ww="['255px','255px','228px','228px']" data-hh="['450px','450px','402','402']" width="510" height="900" data-no-retina> </div>
+							<!-- LAYER NR. 39 -->
+							<div class="tp-caption   tp-resizeme" id="slide-30-layer-55" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','top']" data-voffset="['0','0','199','679']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":"bytrigger","speed":500,"frame":"0","from":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"frame":"999","to":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 43;"><img src="plugins/slider-revolution/assets/images/phonescreen1.jpg" alt="" data-ww="['255px','255px','228px','228px']" data-hh="['450px','450px','402','402']" width="510" height="900" data-no-retina> </div>
+							<!-- LAYER NR. 40 -->
+							<div class="tp-caption   tp-resizeme" id="slide-30-layer-48" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','top']" data-voffset="['0','0','199','679']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":"bytrigger","speed":500,"frame":"0","from":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"frame":"999","to":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 44;"><img src="plugins/slider-revolution/assets/images/phonescreen2-2.jpg" alt="" data-ww="['255px','255px','228px','228px']" data-hh="['450px','450px','402','402']" width="510" height="900" data-no-retina> </div>
+							<!-- LAYER NR. 41 -->
+							<div class="tp-caption   tp-resizeme" id="slide-30-layer-49" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','top']" data-voffset="['0','0','199','679']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":"bytrigger","speed":500,"frame":"0","from":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"frame":"999","to":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 45;"><img src="plugins/slider-revolution/assets/images/phonescreen3.jpg" alt="" data-ww="['255px','255px','228px','228px']" data-hh="['450px','450px','402','402']" width="510" height="900" data-no-retina> </div>
+							<!-- LAYER NR. 42 -->
+							<div class="tp-caption   tp-resizeme" id="slide-30-layer-51" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','top']" data-voffset="['0','0','199','679']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":"bytrigger","speed":500,"frame":"0","from":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"frame":"999","to":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 46;"><img src="plugins/slider-revolution/assets/images/phonescreen4.jpg" alt="" data-ww="['255px','255px','228px','228px']" data-hh="['450px','450px','402','402']" width="510" height="900" data-no-retina> </div>
+							<!-- LAYER NR. 43 -->
+							<div class="tp-caption   tp-resizeme" id="slide-30-layer-52" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','top']" data-voffset="['0','0','199','679']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":"bytrigger","speed":500,"frame":"0","from":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"frame":"999","to":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 47;"><img src="plugins/slider-revolution/assets/images/phonescreen5.jpg" alt="" data-ww="['255px','255px','228px','228px']" data-hh="['450px','450px','402','402']" width="510" height="900" data-no-retina> </div>
+							<!-- LAYER NR. 44 -->
+							<div class="tp-caption   tp-resizeme" id="slide-30-layer-53" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','top']" data-voffset="['0','0','199','679']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"delay":"bytrigger","speed":500,"frame":"0","from":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"frame":"999","to":"sX:1.1;sY:1.1;opacity:0;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 48;"><img src="plugins/slider-revolution/assets/images/phonescreen6.jpg" alt="" data-ww="['255px','255px','228px','228px']" data-hh="['450px','450px','402px','402']" width="510" height="900" data-no-retina> </div>
+						</li>
+					</ul>
+					<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+				</div>
+			</div><!-- END REVOLUTION SLIDER -->
+			<script type="text/javascript">
+				var tpj = jQuery;
+				var revapi12;
+				tpj(document).ready(function () {
+					if (tpj("#rev_slider_12_1").revolution == undefined) {
+						revslider_showDoubleJqueryError("#rev_slider_12_1");
+					} else {
+						revapi12 = tpj("#rev_slider_12_1").show().revolution({
+							sliderType: "hero",
+							jsFileLocation: "plugins/slider-revolution/js/",
+							sliderLayout: "fullwidth",
+							dottedOverlay: "none",
+							delay: 9000,
+							navigation: {},
+							responsiveLevels: [1240, 1024, 778, 480],
+							visibilityLevels: [1240, 1024, 778, 480],
+							gridwidth: [1240, 1024, 778, 480],
+							gridheight: [868, 768, 1060, 1220],
+							lazyType: "none",
+							scrolleffect: {
+								fade: "on",
+								blur: "on",
+								maxblur: "20",
+								on_layers: "on",
+								direction: "top",
+								multiplicator_layers: "1.6",
+								tilt: "10",
+							},
+							parallax: {
+								type: "scroll",
+								origo: "slidercenter",
+								speed: 400,
+								levels: [5, 10, 15, 20, 25, 30, 35, 40, -5, -10, -15, -20, -25, -30, -35, 55],
+								disable_onmobile: "on"
+							},
+							shadow: 0,
+							spinner: "off",
+							autoHeight: "off",
+							disableProgressBar: "on",
+							hideThumbsOnMobile: "off",
+							hideSliderAtLimit: 0,
+							hideCaptionAtLimit: 0,
+							hideAllCaptionAtLilmit: 0,
+							debugMode: false,
+							fallbacks: {
+								simplifyAll: "off",
+								disableFocusListener: false,
+							}
+						});
+						//Fade out not Focused Elements on Hover
+						jQuery('body').on('mouseenter', '.tp-selecttoggle', function () {
+							jQuery(this).addClass("selected");
+							jQuery('.tp-selecttoggle').each(function () {
+								var _ = jQuery(this);
+								if (!_.hasClass("selected")) punchgs.TweenLite.to(_, 0.5, {
+									autoAlpha: 0.35,
+									ease: punchgs.Power2.easeInOut,
+									overwrite: "auto"
+								});
+							});
+						});
+						//Fade in all Elements on Blur
+						jQuery('body').on('mouseleave', '.tp-selecttoggle', function () {
+							jQuery(this).removeClass("selected");
+							jQuery('.tp-selecttoggle').each(function () {
+								var _ = jQuery(this);
+								punchgs.TweenLite.to(_, 0.5, {
+									autoAlpha: 1,
+									ease: punchgs.Power2.easeInOut,
+									overwrite: "auto"
+								});
+							});
+						});
+					}
+					RsPolyfoldAddOn(tpj, revapi12, {
+						position: "top",
+						color: "#ffffff",
+						scroll: true,
+						height: 150,
+						range: "slider",
+						point: "center",
+						placement: 1,
+						responsive: true,
+						negative: true,
+						leftWidth: 0.35,
+						rightWidth: 0.35,
+						inverted: false,
+						animated: false
+					});
+					RsPolyfoldAddOn(tpj, revapi12, {
+						position: "bottom",
+						color: "#ffffff",
+						scroll: true,
+						height: 150,
+						range: "slider",
+						point: "center",
+						placement: 1,
+						responsive: true,
+						negative: true,
+						leftWidth: 0.35,
+						rightWidth: 0.35,
+						inverted: false,
+						animated: false
+					});
+				}); /*ready*/
+			</script>
+		</section>
+		<!-- end: Revolution Slider-->
+
+        <!-- Page Content -->
+        <section id="page-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="content col-lg-8">
+                        <h4>ENTENDA COMO FUNCIONA</h4>
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Timeline -->
+                                <ul class="timeline">
+                                    <!--Timeline item-->
+                                    <li class="timeline-item">
+                                        <div class="timeline-icon">1</div>
+                                        <h4>Cadastre-se</h4>
+                                        <div class="timeline-item-image"><img src="images/timeline/2.jpg"></div>
+                                    </li>
+                                    <!--end: Timeline item-->
+                                    <!--Timeline item-->
+                                    <li class="timeline-item">
+                                        <div class="timeline-icon">2</div>
+                                        <h4>Encontre o motorista ideal</h4>
+                                        <div class="timeline-item-date">15 May, 2020</div>
+                                        <div class="timeline-item-image"><img src="images/timeline/2.jpg"></div>
+                                    </li>
+                                    <!--end: Timeline item-->
+                                    <!--Timeline item-->
+                                    <li class="timeline-item">
+                                        <div class="timeline-icon">3</div>
+                                        <h4>Entre na turma</h4>
+                                        <div class="timeline-item-image"><img src="images/timeline/2.jpg"></div>
+                                    </li>
+                                    <!--end: Timeline item-->
+                                    <!--Timeline item-->
+                                    <li class="timeline-item">
+                                        <div class="timeline-icon">4</div>
+                                        <h4>Tenha acesso às melhores ferramentas</h4>
+                                        <div class="timeline-item-image"><img src="images/timeline/2.jpg"></div>
+                                    </li>
+                                    <!--end: Timeline item-->
+                                </ul>
+                                <!-- end: Timeline -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end: Page Content -->
+
+        <!-- FEATURES -->
+        <section>
+            <div class="container">
+                <div class="text-center m-b-60">
+                    <h1 class="text-medium">NOSSOS PRODUTOS</h1>
+                </div>
+                <div class="row justify-content-center">                    
+                    <div class="col-lg-4 text-center" data-animate="fadeInUp" data-animate-delay="100">
+                        <img alt="img" class="img-fluid center-block" src="images/iphone-big.jpg">
+                    </div>
+                    <div class="col-lg-4 text-center" data-animate="fadeInUp" data-animate-delay="100">
+                        <img alt="img" class="img-fluid center-block" src="images/iphone-big.jpg">
+                    </div>
+                    
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end: FEATURES -->
+
+        <section data-bgcolor='#325ca7' style='background:#325ca7'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <br/>
+                        <br/>
+                        <h2 class="m-b-10" style='color: white;'>Apresentação do Aplicativo Vanmos</h2>
+                        <p style='color: white;'>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis bibendum auctor ibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed lorem quis.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 offset-1 m-t-50">
+                        <iframe src="https://player.vimeo.com/video/157573157?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="seperator"><i class="fa fa-chevron-down"></i></div>
+
+        <!-- APP SCREENSHOTS -->
+        <section>
+            <div class="container" data-animate="fadeInUp" data-animate-delay="200">
+                <div class="carousel" data-items="5" data-margin="20" data-lightbox="gallery">
+                    <div>
+                        <a href="homepages/app-showcase/images/app-1.jpg" data-lightbox="gallery-image" title="Your image title here!"><img src="homepages/app-showcase/images/app-1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="homepages/app-showcase/images/app-2.jpg" data-lightbox="gallery-image" title="Your image title here!"><img src="homepages/app-showcase/images/app-2.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="homepages/app-showcase/images/app-3.jpg" data-lightbox="gallery-image" title="Your image title here!"><img src="homepages/app-showcase/images/app-3.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="homepages/app-showcase/images/app-4.jpg" data-lightbox="gallery-image" title="Your image title here!"><img src="homepages/app-showcase/images/app-4.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="homepages/app-showcase/images/app-5.jpg" data-lightbox="gallery-image" title="Your image title here!"><img src="homepages/app-showcase/images/app-5.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="homepages/app-showcase/images/app-6.jpg" data-lightbox="gallery-image" title="Your image title here!"><img src="homepages/app-showcase/images/app-6.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="homepages/app-showcase/images/app-7.jpg" data-lightbox="gallery-image" title="Your image title here!"><img src="homepages/app-showcase/images/app-7.jpg" alt=""></a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+        <!-- end: APP SCREENSHOTS -->
+
+        <!-- DOWNLOAD APP -->
+        <section class="background-grey p-b-40">
+            <div class="container">
+
+                <div class="text-center m-b-60" data-animate="fadeInUp" data-animate-delay="100">
+                    <h1 class="text-medium"><strong>Em breve nosso aplicativo estará disponível nas principais lojas</h1>
+                    <a data-animate="fadeInUp" data-animate-delay="200" href="#" class="btn"><span><i class="fab fa-apple"></i>App Store</span></a>
+                    <a data-animate="fadeInUp" data-animate-delay="300" href="#" class="btn"><span><i class="fab fa-android"></i>Play Store</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- end: DOWNLOAD APP -->
+
+        <!-- Footer -->
+        FALE CONOSCO
+Para mais informações ou sugestões, nos mande um e-mail, teremos o prazer de te responder!
+
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="widget">
+
+                                <div class="widget-title">Polo HTML5 Template</div>
+                                <p class="mb-5">Built with love in Fort Worth, Texas, USA<br>
+                                    All rights reserved. Copyright © 2019. INSPIRO.</p>
+                                <a href="https://themeforest.net/item/polo-responsive-multipurpose-html5-template/13708923" class="btn btn-inverted" target="_blank">Purchase Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="widget">
+                                        <div class="widget-title">Discover</div>
+                                        <ul class="list">
+                                            <li><a href="#">Features</a></li>
+                                            <li><a href="#">Layouts</a></li>
+                                            <li><a href="#">Corporate</a></li>
+                                            <li><a href="#">Updates</a></li>
+                                            <li><a href="#">Pricing</a></li>
+                                            <li><a href="#">Customers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="widget">
+                                        <div class="widget-title">Features</div>
+                                        <ul class="list">
+                                            <li><a href="#">Layouts</a></li>
+                                            <li><a href="#">Headers</a></li>
+                                            <li><a href="#">Widgets</a></li>
+                                            <li><a href="#">Footers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="widget">
+                                        <div class="widget-title">Pages</div>
+                                        <ul class="list">
+                                            <li><a href="#">Portfolio</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Shop</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="widget">
+                                        <div class="widget-title">Support</div>
+                                        <ul class="list">
+                                            <li><a href="#">Help Desk</a></li>
+                                            <li><a href="#">Documentation</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-content">
+                <div class="container">
+                    <div class="copyright-text text-center">&copy; 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.<a href="//www.inspiro-media.com" target="_blank" rel="noopener"> INSPIRO</a> </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end: Footer -->
+
+    </div>
+    <!-- end: Body Inner -->
+
+    <!-- Scroll top -->
+    <a id="scrollTop"><i class="icon-chevron-up"></i><i class="icon-chevron-up"></i></a>
+    <!--Plugins-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--Template functions-->
+    <script src="js/functions.js"></script>
+
+
 </body>
 
 </html>
