@@ -1266,14 +1266,15 @@ Topbar
 #header #header-wrap #logo a > img {
   vertical-align: inherit;
   transition: all .4s ease-in-out;
-  height: 80px;
+  height: 120px;
   width: auto;
+  margin-top: -15px;
 }
-#header .header-inner #logo a > img,
-#header .header-inner #logo a [class*="logo-"],
-#header #header-wrap #logo a > img,
-#header #header-wrap #logo a [class*="logo-"] {
-  display: none;
+@media (max-width: 1024px) {
+  #header .header-inner #logo a > img,
+  #header #header-wrap #logo a > img  {
+    margin-top: 0px;
+  }
 }
 #header .header-inner #logo a .logo-default,
 #header #header-wrap #logo a .logo-default {
@@ -18463,6 +18464,9 @@ body[data-bg-image] {
   text-align: center !important;
 }
 
+.centralizar {
+text-align: center !important;
+}
 
 
 
